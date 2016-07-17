@@ -30,7 +30,7 @@ def announceWinner(switch):
 	#determine which switch was pressed first
 	firstBtn = ledR if switch == switchR else ledB
 	lastBtn = ledB if switch == switchR else ledR
-	#determine which player won
+	#determine which player won, this one is backwards on purpose as a joke
 	winner = lastBtn if ledColor == ledG else lastBtn
 	#turn off active color and flash winning color
 	GPIO.output(ledColor,False)
